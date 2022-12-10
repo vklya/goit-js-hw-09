@@ -2,8 +2,8 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const refs = {
   delay: document.querySelector('input[name = "delay"]'),
-  step: document.querySelector('input[name = "amount"]'),
-  amount: document.querySelector('input[name = "step"]'),
+  step: document.querySelector('input[name = "step"]'),
+  amount: document.querySelector('input[name = "amount"]'),
   form: document.querySelector('.form'),
 }
 
@@ -42,3 +42,4 @@ function createPromise(position, delay) {
     }, delay);
   });
 }
+
