@@ -8,18 +8,18 @@ const refs = {
     stop: document.querySelector('[data-stop]'),
 };
 
-let changeColor = null;
+let changeColorId = null;
 
 refs.start.addEventListener('click', onStart);
 refs.stop.addEventListener('click', onStop);
 
 function onStart() {
-    changeColor = setInterval(getColor, 1000);
+    changeColorId = setInterval(getColor, 1000);
     disableStartBtn(true);
 }
 
 function onStop() {
-    clearInterval(changeColor);
+    clearInterval(changeColorId);
     disableStartBtn(false);
 }
 
